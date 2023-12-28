@@ -234,6 +234,19 @@ footer {
 .plane{
   display: none;
 }
+.card{
+  margin-left:-25px !important;
+  width:200px !important;
+}
+
+.uk-card-title{
+  font-size: medium;
+}
+
+.description{
+  display: inline;
+  font-size: small;
+}
 
 }
 
