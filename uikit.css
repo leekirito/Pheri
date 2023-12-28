@@ -19,7 +19,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 3 */
   background: #faabc0;
-  color: #ffffff;
+  color: #1F1C1C;
 }
 /*
  * Remove the margin in all browsers.
@@ -1043,6 +1043,9 @@ a.uk-link-reset,
   .uk-table-responsive tr {
     display: block;
   }
+
+  
+
   .uk-table-responsive thead {
     display: none;
   }
@@ -8555,6 +8558,7 @@ iframe[data-uk-cover] {
   margin-bottom: 70px !important;
 }
 .uk-margin-xlarge-left {
+  
   margin-left: 70px !important;
 }
 .uk-margin-xlarge-right {
@@ -8575,6 +8579,7 @@ iframe[data-uk-cover] {
     margin-bottom: 140px !important;
   }
   .uk-margin-xlarge-left {
+    
     margin-left: 140px !important;
   }
   .uk-margin-xlarge-right {
