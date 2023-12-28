@@ -212,6 +212,29 @@ footer {
   hr{
     display:block !important;
   }
+
+  .butterfly2{
+    z-index: -1 ;
+    position:absolute;
+    opacity: 0.4;
+    width: 200px;
+    transform: rotate(30deg);
+    margin-top: -220px;
+    margin-left: 0px;
+}
+.butterfly3{
+  z-index: -1 ;
+  position:absolute;
+  opacity: 0.4;
+  width: 300px;
+  transform: rotate(340deg);
+  margin-top: -120px;
+  margin-left: 00px;
+}
+.plane{
+  display: none;
+}
+
 }
 
 
