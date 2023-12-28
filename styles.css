@@ -220,7 +220,7 @@ footer {
     width: 200px;
     transform: rotate(30deg);
     margin-top: -220px;
-    margin-left: 0px;
+    margin-left: -20px;
 }
 .butterfly3{
   z-index: -1 ;
