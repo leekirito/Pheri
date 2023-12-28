@@ -54,6 +54,35 @@ html{
   text-align: center;
 }
 
+.butterfly{
+  z-index: -1 ;
+  position:absolute;
+  opacity: 0.4;
+  width: 200px;
+  transform: rotate(300deg);
+  margin-top: -400px;
+  margin-left: -300px;
+}
+
+.butterfly2{
+  z-index: -1 ;
+  position:absolute;
+  opacity: 0.4;
+  width: 300px;
+  transform: rotate(30deg);
+  margin-top: -220px;
+  margin-left: 600px;
+}
+.butterfly3{
+  z-index: -1 ;
+  position:absolute;
+  opacity: 0.4;
+  width: 300px;
+  transform: rotate(340deg);
+  margin-top: -120px;
+  margin-left: 300px;
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -61,7 +90,9 @@ html{
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  
 }
+
 
 /* The dots/bullets/indicators */
 .dot1, .dot2 {
@@ -99,8 +130,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    background: #232121;
-    color: #6e7071;
+    background: #bb2c84;
+    color: white;
     
 }
 

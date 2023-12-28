@@ -54,7 +54,7 @@
     
     <div class="uk-navbar-left">
         <span class="uk-navbar-item uk-logo uk-light"><image id="logo" src="src/logo.ico" alt="logo" /></span>
-        <a href="" class="uk-navbar-item uk-logo uk-light">Pheri</a>
+        <a style="color: #bb2c84; font-weight: 700; text-shadow: -3px 1px#1F1C1C;" href="" class="uk-navbar-item uk-logo uk-light">Pheri</a>
     </div>
     <div class="uk-navbar-right">
 
@@ -109,6 +109,8 @@
     <h1 style="color:#1F1C1C" class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Welcome to Pheri<br><span style="color:#1F1C1C" id = "element"></span> <br>From Bracelets to necklaces <br>Spread Love <br>One Accessories at a time</h1>
     <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Us</a>
 
+    <img class="butterfly"src="src/butterfly.png" alt="">
+    <img class="butterfly2"src="src/butterfly2.png" alt="">
 
 </section>
 
@@ -124,7 +126,8 @@
 <section  class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
 <h3 id="about" class="uk-margin-xlarge-left uk-light">About Us</h3>
 <!-- Change here to ur paragraph -->
-<div uk-icon="icon: heart;" id="projectile"></div>
+<div id="projectile"><img src="src/butterfly-pink-butterfly.gif" alt=""></div>
+<img class="butterfly3"src="src/butterfly3.png" alt="">
 
 <p class="uk-margin-xlarge-left uk-margin-xlarge-right">We are a small company and a small team of people founded in Cotabato city Philippines 2023, devoted to spread joy and love through accessories to be bought for yourself or as a gift to a friend or love ones.<br><br>We believe that </p>
 <a href="mailto:by.pherii@gmail.com" target= "_blank"class="uk-margin-xlarge-left uk-light uk-button-text " uk-icon="mail"></a> &nbsp;<a href="https://www.facebook.com/profile.php?id=61553414694204" target= "_blank"class="uk-light uk-button-text" uk-icon="facebook"></a> 
@@ -240,10 +243,17 @@
                 </div>
             </span>
         </div>
-
-
         </div>
-    
+
+
+        <h1 style="color: #313c5e;">Interested?</h1>
+        
+       <span><p style="font-size: x-large; display: inline;">Contact us via the social media platforms</p></span>
+       <br>
+       <span><p style="font-size: x-large; display: inline;">provided below so we can arrange your order!</p></span>
+       <img style="margin-left: 600px; margin-top: -170px;" src="src/plane.png" width="200px" height="200px" alt="">
+       <br>
+       <a href="mailto:by.pherii@gmail.com" target= "_blank"class=" uk-light uk-button-text " uk-icon="mail"></a> &nbsp;<a href="https://www.facebook.com/profile.php?id=61553414694204" target= "_blank"class="uk-light uk-button-text" uk-icon="facebook"></a> 
 
 
     <br>
@@ -257,22 +267,8 @@
 <!-- HTML -->
 <footer>
     <div  id="footer-section1" class="footer-section">
-
-        <p>Contact Us</p>
-        <div>
-        <a href="mailto:by.pherii@gmail.com" target= "_blank"class="uk-margin-small-left uk-light uk-button-text " uk-icon="mail"></a>&nbsp; Mail Us
-       
-        </div>
-        <div>
-        <a href="https://www.facebook.com/profile.php?id=61553414694204" target= "_blank"class="uk-margin-small-left uk-light uk-button-text" uk-icon="facebook"></a>&nbsp; Facebook
-        </div>
-
         
-        <div>
-                09916662319&nbsp;  Gcash
-        </div>
-       
-
+        <img src="src/logo.ico" width="100px" height="100px" alt="">
 
     </div>
 
@@ -280,12 +276,23 @@
         
     <div id="footer-section2" class="footer-section">
 
-        <p>      @copyright<br>
+        <p style="font-weight: bold;">Product<br>
+
         </p>
+        Bracelet<br>
+        Necklace
     </div>
     <div id="footer-section3"  class="footer-section">
 
-        <p>privacy and policy</p>
+        <p style="font-weight: bold;">Contact</p>
+        <div><a href="https://www.facebook.com/profile.php?id=61553414694204" target= "_blank">Facebook</a></div>
+        <div><a href="mailto:by.pherii@gmail.com" target= "_blank">Gmail</a></div>
+        09916662319
+        
+    </div>
+    <div id="footer-section3"  class="footer-section">
+
+        <p style="font-weight: bold;">Privacy and Policy</p>
     </div>
 </footer>
 
@@ -323,6 +330,8 @@ function animateProjectile(proj, x, y, vx, vy) {
     } else {
         x += vx;
         y += vy;
+        var angle = Math.atan2(vy, vx) * 110 / Math.PI;
+        proj.style.transform = 'rotate(' + angle + 'deg)';
         proj.style.left = x + 'px';
         proj.style.top = y + 'px';
         requestAnimationFrame(function() {
@@ -330,6 +339,7 @@ function animateProjectile(proj, x, y, vx, vy) {
         });
     }
 }
+
 
 document.addEventListener('mousemove', moveProjectile);
 document.addEventListener('click', createProjectile);

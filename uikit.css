@@ -18,7 +18,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  background: #faabc0;
+  background: linear-gradient(to left, #f880a0 0%, #f3adc0 100%);
   color: #1F1C1C;
 }
 /*
@@ -1990,8 +1990,8 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-button-secondary {
-  background-color: #B4F8C8;
-  color: #000000;
+  background-color: #bb2c84;
+  color: #ffffff;
   border: 1px solid transparent;
   border-radius: 5px;
 }
@@ -5061,7 +5061,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #faabc0;
+  background: linear-gradient(to left, #f880a0 0%, #f3adc0 100%);
 }
 /* Groups
  ========================================================================== */
