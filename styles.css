@@ -248,6 +248,10 @@ footer {
   font-size: small;
 }
 
+.footerImg{
+  width: 50px !important;margin-left: 20px;
+}
+
 }
 
 
